@@ -14,6 +14,8 @@ First of all as required, we can set all the code chunks and results to be visib
 
 1. Load the data (i.e. read.csv())
 
+This step will consist in step 2.
+
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
 
@@ -54,6 +56,7 @@ hist(stepsCount,xlab="Count",main="Number of Steps Per Day")
 
 2. Calculate and report the mean and median total number of steps taken per day
 
+Mean steps taken per day:
 
 ```r
 meanSteps <- mean(stepsCount)
@@ -63,6 +66,8 @@ meanSteps
 ```
 ## [1] 9354.23
 ```
+
+Median steps taken per day:
 
 ```r
 medianSteps <- median(stepsCount)
@@ -84,7 +89,7 @@ intervalCount <- tapply(RawData$steps,RawData$interval,mean,na.rm=TRUE)
 plot(names(intervalCount),intervalCount,type="l",xlab="Time Interval 5 mins",ylab="Mean Steps Count")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -142,7 +147,7 @@ colnames(totalSteps) <- c("date","steps")
 hist(totalSteps$steps,xlab="Steps Per Day",main="Total Number of Steps Each Day")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 
 
 ```r
 summary(totalSteps$steps,digits=12)
@@ -209,4 +214,4 @@ plot(intervalWeekday$interval, intervalWeekday$steps, type = "n", xlab = "interv
 lines(intervalWeekday$interval, intervalWeekday$steps, type = "l")
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 

@@ -17,6 +17,8 @@ opts_chunk$set(echo = TRUE)
 
 1. Load the data (i.e. read.csv())
 
+This step will consist in step 2.
+
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
 ```{r}
@@ -44,9 +46,14 @@ hist(stepsCount,xlab="Count",main="Number of Steps Per Day")
 
 2. Calculate and report the mean and median total number of steps taken per day
 
+Mean steps taken per day:
 ```{r}
 meanSteps <- mean(stepsCount)
 meanSteps
+```
+
+Median steps taken per day:
+```{r}
 medianSteps <- median(stepsCount)
 medianSteps
 ```
