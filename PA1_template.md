@@ -12,7 +12,7 @@ First of all as required, we can set all the code chunks and results to be visib
 
 1. Load the data (i.e. read.csv())
 
-This step will consist in step 2.
+This step will consist in next step.
 
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 

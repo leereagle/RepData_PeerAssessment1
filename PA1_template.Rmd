@@ -15,7 +15,7 @@ opts_chunk$set(echo = TRUE)
 
 1. Load the data (i.e. read.csv())
 
-This step will consist in step 2.
+This step will consist in next step.
 
 2. Process/transform the data (if necessary) into a format suitable for your analysis
 
